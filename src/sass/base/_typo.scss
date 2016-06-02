@@ -1,0 +1,20 @@
+.h1,.h2,.h3,.h4{
+	font-family: 'latobold';
+}
+.h1{
+	@include font-size(36px);
+}
+.h2{
+	@include font-size(24px);
+}
+.h3{
+	@include font-size(14px);
+	text-transform: uppercase;
+}
+.h4{
+	@include font-size(14px);
+}
+body{
+	@include font-size(14px);
+	font-family: 'latolight';
+}

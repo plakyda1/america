@@ -1,0 +1,182 @@
+.pre-footer{
+	height: 240px;
+	background: url('../img/footer-girl.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	.container{
+		height: 240px;
+	}
+	&__wrap{
+		@include vertical-align(50%);
+		position: relative;
+		float: right;
+	}
+	&__title-wrap,
+	&__btn-wrap{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&__title-wrap{
+		.h1{
+			color: #fff;
+			margin-right: 30px;
+		}
+	}
+}
+.btn-pre-footer{
+	@include font-size(36px);
+	color: #fff;
+	background: $yellow;
+	border-bottom: 5px solid $dark-yellow;
+	padding: 4px 40px;
+	text-transform: uppercase;
+	font-family: 'latoheavy';
+	&:hover{
+		background: $dark-yellow;
+	}
+}
+.footer{
+	color: #fff;
+	min-height: 350px;
+	background: $dark;
+	&__top-line{
+		@include clearfix();
+		border-bottom: 2px solid #969fa8;
+		height: 85px;
+		margin-bottom: 25px;
+	}
+	&__logo{
+		line-height: 85px;
+		width: 141px;
+		height: 60px;
+		float: left;
+	}
+	&__social{
+		float: right;
+		@include vertical-align(50%);
+	}
+	&__contacts-wrap{
+		display: inline-block;
+		text-align: justify;
+		width: 100%;
+		&:last-child:after{
+			content: '';
+			width: 100%;
+			display: inline-block;
+		}
+	}
+	&__contacts-item{
+		display: inline-block;
+		position: relative;
+		width: 26%; // ширина обязательна
+		vertical-align: top;
+		text-align: left;
+	}
+	&__contacts-title{
+		margin-bottom: 20px;
+	}
+	&__contacts-form{
+		@include clearfix();
+	}
+}
+.contacts{
+	&__item{
+		margin-bottom: 20px;
+	}
+}
+.social{
+	&__item{
+		display: inline-block;
+		margin-right: 10px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&__link{
+		background-repeat: no-repeat;
+		display: block;
+		background-image: url('../img/icons/spritesheet.png');
+		width: 43px;
+		height: 43px;
+		&_fb{
+			background-position: -5px -5px;
+			&:hover{
+				background-position: -58px -5px;
+			}
+		}
+		&_vk{
+			background-position: -111px -5px;
+			&:hover{
+				background-position: -111px -58px;
+			}
+		}
+		&_tw{
+			background-position: -5px -58px;
+			&:hover{
+				background-position: -58px -58px;
+			}
+		}
+	}	
+}
+.name-area,
+.email-area,
+.message-area{
+	width: 165px;
+	float: right;
+}
+.form{
+	&-title{
+	float: left;
+	}
+	&-label{
+		@include clearfix();
+		margin-bottom: 10px;
+		display: block;
+	}
+	&__btn-wrap{
+		float: right;
+		width: 165px;
+		@include clearfix();
+	}
+}
+.btn-cln{
+	float: left;
+	color: #fff;
+	background: $yellow;
+	border-bottom: 2px solid $dark-yellow;
+	padding: 4px 14px;
+	text-transform: uppercase;
+	font-family: 'latoheavy';
+	&:hover{
+		background: $dark-yellow;
+	}
+}
+.btn-sbm{
+	float: right;
+	color: #fff;
+	background: $blue;
+	border-bottom: 2px solid $dark-blue;
+	padding: 4px 14px;
+	text-transform: uppercase;
+	font-family: 'latoheavy';
+	&:hover{
+	background: $dark-blue;
+	}
+}
+.name-area,
+.email-area{
+	margin-bottom: 5px;
+}
+.message-area{
+	height: 70px;
+	resize: none;
+}
+
+.all_rights_reserved{
+	min-height: 10px;
+	background: #19232d;
+	color: $dark;
+	text-transform: uppercase;
+	@include font-size(14px);
+}

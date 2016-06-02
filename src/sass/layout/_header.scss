@@ -1,0 +1,111 @@
+.header{
+	&__top-line{
+		@include clearfix();
+		height: 85px;
+		line-height: 85px;
+		background: #fff;
+	}
+	&__logo{
+		line-height: 85px;
+		width: 141px;
+		height: 60px;
+		float: left;
+	}
+	&__nav{
+		float: right;
+	}
+	&__banner-wrap{
+		background: url("../img/banner.jpg") no-repeat;
+		min-height: 335px;
+		background-size: cover;
+		background-position: top;
+	}
+}
+.logo-img{
+	vertical-align: middle;
+}
+.nav{
+	&__item{
+		display: inline-block;
+		margin-right: 15px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&__link{
+		@include font-size(16px);
+		font-family: 'latobold';
+		text-transform: uppercase;	
+		&_active{
+			color: $link-used;
+		}
+		&:hover{
+			color: $blue;
+		}
+	}
+}
+.banner__title-wrap{
+	margin-top: 80px;
+	.h1{
+		line-height: 56px;
+		color: #fff;
+	}
+}
+.services{
+	text-align: center;
+	background: $dark;
+	min-height: 305px;
+	&__items-wrap{
+		padding: 10px 25px 0 25px;
+		margin-top: -50px;
+		max-height: 320px;
+		background: #fff;
+		display: inline-block;
+		text-align: justify;
+		color: $dark;
+		&:last-child:after{
+			content: '';
+			width: 100%;
+			display: inline-block;
+		}
+	}
+	&__item{
+		display: inline-block;
+		position: relative;
+		width: 24%; // ширина обязательна
+		text-align: center;
+		&-img{
+			.fly{
+				width: 93px;
+				height: 119px;
+			}
+			.books{
+				width: 117px;
+				height: 119px;
+			}
+			.house{
+				width: 94px;
+				height: 119px;
+			}
+		}
+		&-title{
+			margin-bottom: 15px;
+		}
+		&-dscr{
+			margin-bottom: 15px;
+		}
+		&-btn{
+			.btn-header{
+				color: #fff;
+				background: $blue;
+				border-bottom: 2px solid $dark-blue;
+				padding: 4px 18px;
+				text-transform: uppercase;
+				font-family: 'latoheavy';
+				&:hover{
+					background: $dark-blue;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+*{
+	box-sizing: border-box;
+}
+// .container-wide{
+// 	@include clearfix();
+// 	max-width: 1020px;
+// 	margin: 0 auto;
+// 	padding: 0 10px;
+// }
+.container-short{
+	@include clearfix();
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.container{
+	@include clearfix();
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
